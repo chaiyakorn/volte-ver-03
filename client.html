@@ -252,8 +252,8 @@
 		document.getElementById("status_connect").innerHTML = '<font style="color:#00ff00">Online</font>';
 		document.getElementById("player_name").innerHTML = playername;
 
-		microgear.publish('/bingo/client',"newbox|"+playername);// send for creat box
-		console.log('/bingo/client',"newbox|"+playername);	
+		microgear.publish('/bingo/client',"|newbox|"+playername);// send for creat box
+		console.log('/bingo/client',"|newbox|"+playername);	
 
 
 		bingoPlayer=generateNumbers();
